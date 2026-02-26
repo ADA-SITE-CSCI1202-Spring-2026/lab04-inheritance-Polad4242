@@ -11,7 +11,6 @@ public class Person {
         this.gender = gender;
     }
 
-    // Default constructor (optional but good practice)
     public Person() {
     }
 
@@ -41,7 +40,6 @@ public class Person {
         this.gender = gender;
     }
 
-    // toString method
     @Override
     public String toString() {
         return "Person[firstName=" + firstName +
@@ -49,7 +47,6 @@ public class Person {
                ", gender=" + gender + "]";
     }
 
-    // equals method
     public boolean equals(Person p) {
         if (p == null) {
             return false;
@@ -59,4 +56,5 @@ public class Person {
                this.lastName.equals(p.lastName) &&
                this.gender.equals(p.gender);
     }
+
 }
